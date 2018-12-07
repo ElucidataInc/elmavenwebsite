@@ -1,0 +1,15 @@
+---
+title: Hello Title ;-)
+layout: body.njk
+
+footnote: this is a footnote
+header_text: Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo.
+footer_text: Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna.
+filter_test: I should have dashes between words
+---
+
+<p style="color:white;">This is the Content</p>
+
+<p style="color:white;">This version uses metalsmith-layouts 2.1.0 and metalsmith-in-place 4.1.1</p>
+<p style="color:white;">{{ filter_test | spaceToDash }}</p>
+<p style="color:white;"><em>{{ footnote | toUpper }}</em></p>
